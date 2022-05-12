@@ -8,7 +8,6 @@ const gameOptionsContainer = document.querySelector('form');
 const cards = gameContainer.getElementsByTagName("div");
 const restartBtn = document.querySelector('#restartBtn');
 const agentRange = document.querySelector('input[type=range]');
-//This is a merge conflict
 
 
 const AGENTS = [
@@ -67,7 +66,9 @@ function shuffle(array) {
 
 let shuffledAgents = shuffle(AGENTS);
 let currentGameDeck = selectAgents(shuffledAgents,agentRange.value);
+//need to decide how to layout the cards depending on the difficulty/number of cards being played
 //setGameContainerSize();
+
 // counter to see if the game is finished
 let gameDone = currentGameDeck.length/2;
 // when the DOM loads
@@ -84,13 +85,10 @@ agentRange.addEventListener("input",displayDifficulty);
 function createDivsForAgents(agentsArray) {
 // using a regular for loop instead of for...of loop to give each card a unique ID (variable i) to prevent double clicks
   for (let i=0; i<agentsArray.length; i++) {
-    // create a new div and img and append img to this div
+   
     const newDiv = document.createElement("div");
-   //const newImg = document.createElement('img');
-   // newImg.setAttribute('src','AgentPortraits\\ValorantLogo.png');
-    //newDiv.append(newImg);
-    
-    // give it a class attribute for the value we are looping over
+ 
+    // give it a name attribute for the value(Agents) we are looping over
     newDiv.setAttribute('name',`${agentsArray[i]}`);
    
     //give each card a unique ID to prevent double clicks
@@ -98,9 +96,10 @@ function createDivsForAgents(agentsArray) {
     
     // call a function handleCardClick when a div is clicked on
     newDiv.addEventListener("click", handleCardClick);
+    // give a class attribute so we can set the back of the card when we flip it
     newDiv.classList.add('background');
 
-    // append the div to the element with an id of game
+    // append the div(cards) to the element with an id of game
     gameContainer.append(newDiv);
   }
 }
