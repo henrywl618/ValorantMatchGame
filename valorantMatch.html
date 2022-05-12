@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="startPage"><p style="font-size: 7rem; margin: 0; padding-top: 300px;">vAlorant<p>
+        
+      <p style="font-size: 2rem;">A Memory CArd GAme
+        <br>
+        <button type="button" id="startBtn">> StArt GAme < </button>
+      </p>
+    </div>
+
+    <div id="gamePage" class="hidden centerForm"> 
+      <!-- <h1>Memory Game!</h1> -->
+      <h2>Score: 0</h2>
+      <h3 id="hiScore">High Score: 0</h3>
+
+      <div id="game">
+      </div>
+
+    </div>
+
+    <div>
+    <form class="hidden">
+      <div class="centerForm" >
+        <div style="padding-top:20px;">Select Difficulty Level</div>
+        <div id="difficultyDisplay"style="color:gray">Iron</div>
+        <div><input type="range" min="5" max="19" value="5" step="2"></input></div> 
+        <div><input type="button" id="changeBtn" value="> Change Difficulty <"></input></div> 
+        <div><input type="button" id="restartBtn" value="> Restart <"></input></div>
+        <div><input type="submit" id="formBtn" value="> Home Page <"></input></div>
+      </div>
+  
+      
+    </form>
+    </div>
+
+    <script src="valorantMatch.js"></script>
+  </body>
+</html>

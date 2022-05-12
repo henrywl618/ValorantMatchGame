@@ -1,0 +1,125 @@
+#game div {
+    border: 4px solid red;
+    border-radius: 15px;
+    width: 127px;
+    height: 175px;
+    margin: 10px;
+    display: inline-block;
+    user-select: none;
+    background-size: 80%;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  
+  #game {
+    border: 5px solid rgb(155, 54, 54);
+    border-radius: 5px;
+    background-color: rgb(255,255,255,0.5);
+    user-select: none;
+    
+  }
+  
+  #startPage{
+    background-color: rgb(3, 3, 44);
+    color: red;
+    font-size: 8rem;
+    font-family: Valorant;
+    text-align: center;
+    height:100vh;
+    width: 100vw;
+    margin: 0px;
+    user-select: none;
+    background-image: url("AgentPortraits/valorantbackground2.jpg");
+    background-size: 90%;
+    background-attachment: fixed;
+  }
+  
+  #gamePage {
+    font-family: Valorant;
+    min-width: 800px;
+    max-width: 1100px;
+    margin: 0px auto;
+    text-align: center;
+  }
+  
+  body{
+    margin:0;
+    background-color: rgb(3, 3, 44);
+    background-image: url("AgentPortraits/valorantbackground2.jpg");
+    background-size: 90%;
+  }
+  
+  p{
+    font-size: 2rem;
+  }
+  
+  button, input[type=button], input[type=submit]{
+    font-family: Valorant;
+    font-weight: bold;
+    border-style: none;
+    background-color: rgb(0,0,0,0);
+    color: red;
+    padding-top:4px;
+    border-radius: 2px;
+  }
+  
+  button:hover, input[type=button]:hover, input[type=submit]:hover {
+    background-color: white;
+  }
+  
+  
+  .centerForm{
+    font-family: Valorant;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  
+  .flip{
+    transform: rotateY(180deg);
+  }
+  
+  .flipback{
+    transform: rotateY(180deg);
+  }
+  
+  div{
+    transition:all 0.3s ease;
+  }
+  
+
+  
+  h1, h2, h3, form{
+    color: red;
+    user-select: none;
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+  @font-face {
+    font-family: Valorant;
+    src: url(ValorantFont.ttf);
+  }
+  
+  img{
+    padding-top: 50%;
+    width: 100%;
+    height: 50%;
+    pointer-events: none;
+    user-select: none;
+    border-radius: 13px;
+  }
+  
+  .background{
+    background-image: url("AgentPortraits\\ValorantLogo3.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(3, 3, 44);
+    background-position: center;
+  
+  }
+  
